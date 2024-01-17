@@ -10,8 +10,8 @@ const int trigPin = 18;
 const int echoPin = 19;
 int slot = 6;
 LiquidCrystal_I2C lcd(0x27,16,2);
-String serverNameslot = "https://api.krmdev.com.tr/esp32/otopark.php";
-String serverNamedistance = "https://api.krmdev.com.tr/esp32/mesafe.php";
+String serverNameslot = "https://api...";
+String serverNamedistance = "https://api...";
 
 #define SOUND_SPEED 0.034
 Servo servo1;
@@ -56,9 +56,6 @@ void setup() {
       
       // Your Domain name with URL path or IP address with path
       http.begin(serverPath.c_str());
-      
-      // If you need Node-RED/server authentication, insert user and password below
-      //http.setAuthorization("REPLACE_WITH_SERVER_USERNAME", "REPLACE_WITH_SERVER_PASSWORD");
       
       // Send HTTP GET request
       int httpResponseCode = http.GET();
@@ -114,9 +111,6 @@ void loop() {
       
       // Your Domain name with URL path or IP address with path
       http.begin(serverPath.c_str());
-      
-      // If you need Node-RED/server authentication, insert user and password below
-      //http.setAuthorization("REPLACE_WITH_SERVER_USERNAME", "REPLACE_WITH_SERVER_PASSWORD");
       
       // Send HTTP GET request
       int httpResponseCode = http.GET();
