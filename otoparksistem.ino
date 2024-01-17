@@ -2,8 +2,8 @@
 #include <LiquidCrystal_I2C.h>
 #include <HTTPClient.h>
 
-const char* ssid = "Kerem's Galaxy";
-const char* password = "vinc8250";
+const char* ssid = "Yourwifiadress";
+const char* password = "wifipass";
 
 static const int servoPin = 13;
 const int trigPin = 18;
